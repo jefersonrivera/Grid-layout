@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  height: 100vh;
+}
+header {
+  grid-area: header;
+  background-color: darkgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  grid-area: aside;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 1.5rem;
+}
+main {
+  display: grid;
+  grid-area: main;
+  background-color: white;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: gray;
+  overflow: auto;
+  padding: 1.3rem;
+}
+.rolex {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  border: solid 1px black;
+  justify-content: space-between;
+}
+footer {
+  grid-area: footer;
+  background-color: darkgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rolex img {
+  width: auto;
+  height: 40%;
+  object-fit: cover;
+}
+
+.btncomprar {
+  display: flex;
+  justify-content: center;
+  background-color: darkgreen;
+  border: 0;
+  color: white;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+menu {
+  padding-top: 2.5rem;
+}
+aside h2 {
+  margin-top: 2.5rem;
+}
+ul {
+  padding-top: 0.5rem;
+}
+ul p {
+  padding-top: 1rem;
+}
